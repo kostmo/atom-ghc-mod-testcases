@@ -1,0 +1,5 @@
+resolver: lts-6.14
+
+packages:
+- 'my-package-a'
+- 'my-package-b'
