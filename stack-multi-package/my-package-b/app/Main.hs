@@ -1,7 +1,7 @@
 module Main where
 
--- XXX Renaming the import works OK with ghc-mod's "Go to Declaration" function.
 import           LibB1
 
 main :: IO ()
-main = someFunc
+main = someFunc  -- "go-to-declaration" works both in `haskell-ghc-mod` and `ide-haskell-hasktags`.
+                 -- Compare to the `myConstant6` test case in the "LibB1" module.

@@ -4,6 +4,7 @@ import           LibA1
 import qualified LibA2
 import qualified LibB2 as MyLibB2
 import qualified LibB3
+import           LibB4
 
 
 myConstant1 :: String
@@ -41,6 +42,10 @@ someFunc = putStrLn $ unwords [
   , LibB3.myConstant5   -- defined in a different module local to this package.
                         -- "go-to-declaration" works for `haskell-ghc-mod`
                         -- both when highlighting and placing the cursor.
-                        -- `haskell-ghc-mod` does not work under any
+                        -- `ide-haskell-hasktags` does not work under any
                         -- circumstance.
+
+  , myConstant6         -- Defined in a different module in this same package.
+                        -- Works with `haskell-ghc-mod` and with
+                        -- `ide-haskell-hasktags`.
   ]
